@@ -2,8 +2,6 @@
 
 namespace App\Controller;
 
-require_once __DIR__ . "../../../vendor/autoload.php";
-
 use \App\Model\Classes\SelectRow;
 
 class SelectRowController
@@ -16,8 +14,3 @@ class SelectRowController
         return $result;
     }
 }
-
-/* $sel = new SelectRowController;
-$resSel = $sel->selectProduct();
-print_r($resSel);
-var_dump($resSel); */

@@ -2,8 +2,6 @@
 
 namespace App\Model\Classes;
 
-require_once __DIR__ . "/../../../vendor/autoload.php";
-
 use \App\Model\DataBase\DataBase;
 use \App\Model\DataBase\Sql;
 

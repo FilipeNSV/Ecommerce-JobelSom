@@ -2,10 +2,7 @@
 
 namespace App\Controller;
 
-require_once __DIR__ . "../../../vendor/autoload.php";
-
 use \App\Model\Classes\DisplayHome;
-use \App\Model\DataBase\DataBase;
 
 class DisplayHomeController
 {

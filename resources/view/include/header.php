@@ -37,20 +37,10 @@ require_once __DIR__."/../../../vendor/autoload.php";
                     <div class="container p-1 my-1">
                         <div class="row">
                             <div class="col">
-                                <a href="home.php">
-                                    <h5 class="h5 text-center" id="logoJobel"> Jobel Som <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
-                                        </svg><br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
-                                        </svg> Equipadora</h5>
-                                </a>
+                                <a href="home.php"><img src="../img/logo.png" style="height: 8em;" alt="Logo Jobel Som"></a>
                             </div>
                             <div class="col-6">
-                                <form class="d-flex" method="GET" action="product.php">
+                                <form class="d-flex" method="GET" action="product.php" style="padding-top: 40px">
                                     <input class="form-control me-2" name="searchProduct" type="search" placeholder="Busca..."
                                         aria-label="Search">
                                     <button class="btn btn-light" type="submit" id="btnSrc"><svg
@@ -62,12 +52,12 @@ require_once __DIR__."/../../../vendor/autoload.php";
                                 </form>
                             </div>
                             <div class="col">
-                                <a href="#" class="d-inline justify-content-center align-items-center" style="color: white;"><i class="fa-solid fa-credit-card"></i> <i class="fa-solid fa-bag-shopping"></i>  VENHA JÁ NOS CONHECER  <i class="fa-solid fa-cart-shopping">  <i class="fa-solid fa-shop"></i></i></a>
+                                <a href="#" class="d-inline justify-content-center align-items-center" style="color: white;"><i class="fa-solid fa-credit-card" style="margin-top: 47px; margin-left: 15px;"></i> <i class="fa-solid fa-bag-shopping"></i>  VENHA JÁ NOS CONHECER  <i class="fa-solid fa-cart-shopping">  <i class="fa-solid fa-shop"></i></i></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <a href="#" style="color: white;">
+                                <a href="#" style="color: white; padding-right: 60px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-geo-alt" viewBox="0 0 16 16">
                                         <path
@@ -77,7 +67,7 @@ require_once __DIR__."/../../../vendor/autoload.php";
                                 </a>
                             </div>
                             <div class="col-6">
-                                <ul class="nav" id="navMenu">
+                                <ul class="nav" id="navMenu" style="margin-top: -20px; margin-left: 20px; padding-bottom: 10px;">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -108,7 +98,7 @@ require_once __DIR__."/../../../vendor/autoload.php";
                                 </ul>
                             </div>
                             <div class="col">
-                                <a href="userpanelP.php" class="d-flex justify-content-center align-items-center">
+                                <a href="userpanelP.php" id="btnLoginAdm" class="d-flex justify-content-center align-items-center">
                                     <i class="fa-solid fa-user-gear" style="color: white;"></i>
                                 </a>
                             </div>
