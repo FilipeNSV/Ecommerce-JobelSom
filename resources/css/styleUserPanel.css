@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #dd6d28;
+    border-bottom: solid white 3px;
+    box-shadow: 10px 10px 10px black;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+#main {
+    max-width: 850px;
+}
+
+.badge {
+    border: solid #BDC3C7;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 0px;
+}
+
+.table {
+    border: solid #BDC3C7;
+    box-shadow: 10px 10px 10px black;
+}
+
+.btn {
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.page-link {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+}
+
+td {
+    max-height: 55px;
+}

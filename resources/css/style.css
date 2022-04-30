@@ -1,0 +1,85 @@
+html,
+header,
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Início Herader - Home */
+header {
+    height: auto;
+    width: 100%;
+    background-color: #dd6d28;
+}
+
+#logoJobel {
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#btnSrc {
+    background-color: white;
+    margin-left: -20px;
+    border: none;
+}
+
+
+#navMenu a,
+#menuStore a {
+    color: white;
+}
+
+/* Fim Herader -Home */
+
+/* Início Sections - Home */
+#titleDestaques,
+#titleServicos,
+#titleMVendidos,
+#titlePatrocinados {
+    background-color: white;
+    border-bottom: 1px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px black;
+}
+
+.dropdown-menu {
+    background-color: #dd6d28;
+}
+
+.card {
+    border: rgb(134, 133, 133);
+    box-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    line-height: 1.4;
+}
+
+/* Fim Sections - Home */
+
+/* Início Footer - Home */
+footer {
+    padding-top: 20px;
+}
+
+/* Fim Footer - Home */
+
+/* Início Sections - Store*/
+
+#menuStore {
+    background-color: #dd6d28;
+    max-width: 90px;
+}
