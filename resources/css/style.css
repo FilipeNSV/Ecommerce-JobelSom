@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-/* Início Herader - Home */
+/* Início Header - Home */
 header {
     height: auto;
     width: 100%;
@@ -27,13 +27,17 @@ header {
     border: none;
 }
 
+#imgLogoResp {
+    display: none;
+}
 
 #navMenu a,
-#menuStore a {
+#menuStore a,
+#offcanvasNavbar {
     color: white;
 }
 
-/* Fim Herader -Home */
+/* Fim Header - Home */
 
 /* Início Sections - Home */
 #titleDestaques,
@@ -72,9 +76,9 @@ footer {
 
 /* Fim Footer - Home */
 
-/* Início Sections - Store*/
+@media only screen and (max-width: 990px) {   
 
-#menuStore {
-    background-color: #dd6d28;
-    max-width: 90px;
+    #imgLogoResp {
+        display: block;
+    }
 }
