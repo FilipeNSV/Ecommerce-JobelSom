@@ -7,7 +7,8 @@
 
             <div class="col-md-4 p-3">CONTATO:<br>
                 <i class="fa-solid fa-phone"></i> (87) 3861-0480<br>
-                <i class="fa-solid fa-envelope"></i> jobelsom@gmail.com
+                <i class="fa-solid fa-envelope"></i> jobelsom@gmail.com<br>
+                <i class="fa-solid fa-location-dot"></i> Petrolina - PE, São José, 56304-160.
             </div>
 
             <div class="col-md-4 p-3">SIGA-NOS:<br>

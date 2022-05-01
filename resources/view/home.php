@@ -52,8 +52,8 @@ $display = new DisplayHomeController;
                 </div>
 
                 <?php
-                    $resultS2 = $display->startDisplayS2();
-                    while ($resultS2row = $resultS2->fetch(PDO::FETCH_ASSOC)) {
+                $resultS2 = $display->startDisplayS2();
+                while ($resultS2row = $resultS2->fetch(PDO::FETCH_ASSOC)) {
                 ?>
 
                     <div class="col-md-4 col-lg-3">
@@ -160,8 +160,8 @@ $display = new DisplayHomeController;
                 </div>
 
                 <?php
-                    $resultS4 = $display->startDisplayS4();
-                    while ($resultS4row = $resultS4->fetch(PDO::FETCH_ASSOC)) {
+                $resultS4 = $display->startDisplayS4();
+                while ($resultS4row = $resultS4->fetch(PDO::FETCH_ASSOC)) {
                 ?>
 
                     <div class="col-md-4 col-lg-3">
@@ -189,8 +189,8 @@ $display = new DisplayHomeController;
                 </div>
 
                 <?php
-                    $resultS5 = $display->startDisplayS5();
-                    while ($resultS5row = $resultS5->fetch(PDO::FETCH_ASSOC)) {
+                $resultS5 = $display->startDisplayS5();
+                while ($resultS5row = $resultS5->fetch(PDO::FETCH_ASSOC)) {
                 ?>
 
                     <div class="col-md-4 col-lg-3">
