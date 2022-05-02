@@ -12,7 +12,7 @@ require_once __DIR__ . "/../../../vendor/autoload.php";
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
     <link rel="stylesheet" href="../css/style.css">
-    
+
 
     <title>Jobel Som</title>
 </head>
@@ -43,13 +43,31 @@ require_once __DIR__ . "/../../../vendor/autoload.php";
                                 </form>
                             </div>
                             <div class="col">
-                                <a href="#" class="d-inline justify-content-center align-items-center" style="color: white;"><i class="fa-solid fa-credit-card" style="margin-top: 47px; margin-left: 15px;"></i> <i class="fa-solid fa-bag-shopping"></i> VENHA JÁ NOS CONHECER <i class="fa-solid fa-cart-shopping"> <i class="fa-solid fa-shop"></i></i></a>
+                                <a href="#" class="d-inline justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#btnImgHeader" style="color: white;"><i class="fa-solid fa-credit-card" style="margin-top: 47px; margin-left: 15px;"></i> <i class="fa-solid fa-bag-shopping"></i> VENHA JÁ NOS CONHECER <i class="fa-solid fa-cart-shopping"> <i class="fa-solid fa-shop"></i></i></a>
+                            </div>
+
+                            <div class="modal fade" id="btnImgHeader" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #dd6d28;">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: white;">NOSSA LOJA!</h5>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col-lg">
+                                                <div class="form-floating">
+                                                    <img style="width: 100%;" src="../img/Jobel1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col text-center">
                                 <a href="https://www.google.com/maps/place/Jobel+Som/@-9.3987061,-40.4920536,21z/data=!4m5!3m4!1s0x0:0x88fb06cb1396d92e!8m2!3d-9.3987194!4d-40.4920632" target="_blank" style="color: white; padding-right: 60px;">
-                                <i class="fa-solid fa-map-location-dot"></i> Localização
+                                    <i class="fa-solid fa-map-location-dot"></i> Localização
                                 </a>
                             </div>
                             <div class="col-6">
@@ -96,7 +114,7 @@ require_once __DIR__ . "/../../../vendor/autoload.php";
             </nav>
 
             <div class="row">
-                
+
                 <div class="col">
                     <div class="offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="margin-bottom: 45%; background-color: #dd6d28;">
                         <div class="offcanvas-header">
@@ -134,7 +152,7 @@ require_once __DIR__ . "/../../../vendor/autoload.php";
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-9" id="imgLogoResp">
                     <a href="home.php"><img src="../img/logo.png" style="height: 8em;" alt="Logo Jobel Som"></a>
                 </div>
