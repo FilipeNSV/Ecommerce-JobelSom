@@ -34,11 +34,20 @@ class Sql
         return $stmt;
     }
 
-    public function selectSearch($table, $titulo)
+    public function selectSearchTitle($table, $titulo)
     {
         $cmd = "SELECT * FROM $table WHERE titulo LIKE :ti";
         $stmt = $this->conn->prepare($cmd);
         $stmt->bindValue(':ti', $titulo);
+        $stmt->execute();
+        return $stmt;
+    }
+
+    public function selectSearchId($table, $id)
+    {
+        $cmd = "SELECT * FROM $table WHERE id LIKE :id";
+        $stmt = $this->conn->prepare($cmd);
+        $stmt->bindValue(':id', $id);
         $stmt->execute();
         return $stmt;
     }

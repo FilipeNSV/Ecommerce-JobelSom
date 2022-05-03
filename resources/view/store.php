@@ -20,12 +20,12 @@ use App\Controller\StoreController;
       while ($productsRows = $productsRow->fetch(PDO::FETCH_ASSOC)) {
       ?>
         <div class="col-md-4 col-lg-3">
-          <div class="card h-100 d-fex p-4 flex-column">
-            <a href="product.php?searchProduct=<?php echo $productsRows['titulo']; ?>"><img src="<?php echo $productsRows['urlimg']; ?>" class="card-img-top" alt="..."></a>
+          <div class="card text-center h-100 d-fex p-4 flex-column">
+            <img src="<?php echo $productsRows['urlimg']; ?>" class="card-img-top" alt="...">
             <div class="card-body">
-            <a href="product.php?searchProduct=<?php echo $productsRows['titulo']; ?>"><h5 class="card-title mt-3"><?php echo $productsRows['titulo']; ?></h5></a>
+              <h5 class="card-title mt-3"><?php echo $productsRows['titulo']; ?></h5>
               <p class="card-text"><?php echo $productsRows['subtitulo']; ?></p>
-              <a href="#" class="btn mt-auto btn-outline-success">Fale Conosco</a>
+              <a href="product.php?searchProduct=<?php echo $productsRows['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
             </div>
           </div>
         </div>

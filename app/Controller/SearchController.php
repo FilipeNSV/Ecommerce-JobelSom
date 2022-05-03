@@ -6,10 +6,10 @@ use App\Model\Classes\Search;
 
 class SearchController
 {
-    public function productSearch()
+    public function productSearchTitle()
     {
         $search = new Search;
-        $result = $search->search();
+        $result = $search->searchTitle();
         return $result;
     }
 }

@@ -39,8 +39,6 @@ use App\Controller\PaginationController;
                     <th scope="col">Subtitulo</th>
                     <th scope="col">Descricao</th>
                     <th scope="col">URL Imagem</th>
-                    <th scope="col">Titulo Desc.</th>
-                    <th scope="col">Desc. Comp.</th>
                     <th scope="col">Selec.</th>
                 </tr>
             </thead>
@@ -59,8 +57,6 @@ use App\Controller\PaginationController;
                             <td><?php echo $productRow['subtitulo']; ?></td>
                             <td><?php echo $productRow['descricao']; ?></td>
                             <td><?php echo $productRow['urlimg']; ?></td>
-                            <td><?php echo $productRow['titulodesc']; ?></td>
-                            <td><?php echo $productRow['descricaocomp']; ?></td>
                             <td><input type="checkbox" class="form-check-input mt-0" name="productID" value="<?php echo $productRow['id']; ?>">
                                 <button type="submit" id="btnSelect" name="btnSelectUser" class="btn btn-sm btn-outline-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
@@ -234,8 +230,9 @@ use App\Controller\PaginationController;
                                 </div>
                                 <div class="modal-body">
                                     <h6 class="fw-bold">Confira os Dados!</h6>
+                                    <h6 class="fw-bold text-danger">Insira o ID!</h6>
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" name="S2IdUpadate" readonly value="<?php echo $updateProdRow['id']; ?>">
+                                        <input type="text" class="form-control" name="S2IdUpadate">
                                         <label for="floatingInputGrid">ID</label>
                                     </div><br>
                                     <div class="col-sm">
@@ -414,8 +411,9 @@ use App\Controller\PaginationController;
                                 </div>
                                 <div class="modal-body">
                                     <h6 class="fw-bold">Confira os Dados!</h6>
+                                    <h6 class="fw-bold text-danger">Insira o ID!</h6>
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" name="S4IdUpadate" readonly value="<?php echo $updateProdRow['id']; ?>">
+                                        <input type="text" class="form-control" name="S4IdUpadate">
                                         <label for="floatingInputGrid">ID</label>
                                     </div><br>
                                     <div class="col-sm">
@@ -507,8 +505,9 @@ use App\Controller\PaginationController;
                                 </div>
                                 <div class="modal-body">
                                     <h6 class="fw-bold">Confira os Dados!</h6>
+                                    <h6 class="fw-bold text-danger">Insira o ID!</h6>
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" name="S5IdUpadate" readonly value="<?php echo $updateProdRow['id']; ?>">
+                                        <input type="text" class="form-control" name="S5IdUpadate">
                                         <label for="floatingInputGrid">ID</label>
                                     </div><br>
                                     <div class="col-sm">

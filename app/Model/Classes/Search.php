@@ -9,7 +9,7 @@ class Search
 {
     public $conn;
 
-    public function search()
+    public function searchTitle()
     {
         if (!isset($_GET['searchProduct'])) {
             header('location: ../../../resources/view/home.php');
@@ -21,7 +21,7 @@ class Search
         $db = $data->connection();
         
         $sql = new Sql($db);
-        $result = $sql->selectSearch('products', $name);
+        $result = $sql->selectSearchTitle('products', $name);
 
         return $result;
        
