@@ -14,8 +14,9 @@ class DataBase
     public function connection()
     {
         try{
-            $this->conn = new \PDO($this->dbType.': host='.$this->host.'; dbname='.$this->dbname, $this->login, $this->password);
+            $this->conn = new \PDO($this->dbType.': host='.$this->host.'; dbname='.$this->dbname.';charset=utf8', $this->login, $this->password, array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             //echo "Conexão estabelecida com sucesso!";
+
         }catch(\PDOException $erro){
             echo "Connection Established Not Successfully. Erro: " . $erro->getMessage(); 
         }
@@ -23,5 +24,3 @@ class DataBase
         return $this->conn;
     }
 }
-
-?>
