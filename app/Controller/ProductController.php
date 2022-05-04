@@ -2,17 +2,20 @@
 
 namespace App\Controller;
 
+require_once __DIR__."../../../vendor/autoload.php";
+
 use \App\Model\Classes\Product;
 
 class ProductController
 {
     public function productRegister()
-    {
+    {        
         if (isset($_POST['ProductTiInsert']) && !empty($_POST['ProductTiInsert'])) {
             $image = $_FILES['ProductImgInsert'];
             $user = new Product;
-            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], '../img/'.$image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);
-            return $result;
+            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], '../img/'.$image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);    
+            header("location: ../../resources/view/userPanelP.php");
+            return $result;        
         }
     }
 
@@ -35,3 +38,6 @@ class ProductController
         }
     }
 }
+
+$product = new ProductController;
+$product->productRegister();

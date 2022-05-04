@@ -19,7 +19,6 @@ class Sql
 
         foreach ($params as $key => $value) {
             $stmt->bindValue($key, $value);
-            echo $key, $value;
         }
 
         $stmt->execute();
@@ -60,7 +59,7 @@ class Sql
         foreach ($params as $key => $value) {
             $stmt->bindValue($key, $value);
         }
-        
+
         $return = $stmt->execute();
         return $return;
     }

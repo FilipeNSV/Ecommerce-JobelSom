@@ -34,7 +34,6 @@ use App\Controller\SelectRowController;
 
             <?php
             $product = new ProductController;
-            $product->productRegister();
             $product->productUpdate();
             $product->productDelete();
             ?>
@@ -45,7 +44,7 @@ use App\Controller\SelectRowController;
 
             <div class="modal fade" id="insertProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="../../app/Controller/ProductController.php" method="post" enctype="multipart/form-data">
                         <div class="modal-content">
                             <div class="modal-header" style="background-color: black;">
                                 <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Inserir Produto</h5>
