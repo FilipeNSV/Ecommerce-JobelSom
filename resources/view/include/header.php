@@ -1,9 +1,5 @@
 <?php
-session_start();
 require_once __DIR__ . "/../../../vendor/autoload.php";
-use Dotenv;
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__."/../../../");
-$dotenv->load();
 ?>
 <!doctype html>
 <html lang="en">
@@ -138,13 +134,13 @@ $dotenv->load();
                                 <li class="nav-item">
                                     <a class="nav-link" href="home.php#titleMVendidos" style="color: white;">Mais Vendidos</a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item">
                                     <a class="nav-link" href="home.php#titlePatrocinados" style="color: white;">Patrocinados</a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#footer" style="color: white;">Contato</a>
-                                </li>
-                                <li class="nav-item dropdown">
+                                </li>                                
+                                <li class="nav-item">
                                     <a class="nav-link fw-bolder" href="store.php" style="color: white">Toda a Loja</a>
                                 </li>
                             </ul>
