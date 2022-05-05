@@ -1,12 +1,20 @@
 <?php
 require_once __DIR__ . '../../../../vendor/autoload.php';
 
-session_start();
+use Dotenv;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/../../../");
+$dotenv->load();
+
+if (!isset($_SESSION)) {
+    session_start();
+}
 if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
     header('location: userlogin.php');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

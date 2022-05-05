@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Controller;
-session_start();
+
+if (!isset($_SESSION)) {
+    session_start();
+}
 
 require_once __DIR__ . "/../../vendor/autoload.php";
 
@@ -15,7 +18,7 @@ class LoginController
     public function loginValidation()
     {
         $login = new Login;
-        $login->login();        
+        $login->login();
     }
 }
 
