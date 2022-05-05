@@ -2,20 +2,22 @@
 
 namespace App\Controller;
 
-require_once __DIR__."../../../vendor/autoload.php";
+require_once __DIR__ . "../../../vendor/autoload.php";
 
 use \App\Model\Classes\Product;
 
 class ProductController
 {
     public function productRegister()
-    {        
+    {
         if (isset($_POST['ProductTiInsert']) && !empty($_POST['ProductTiInsert'])) {
             $image = $_FILES['ProductImgInsert'];
             $user = new Product;
-            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], '../img/'.$image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);    
+            move_uploaded_file($image['tmp_name'], '../../resources/img/' . $image['name']);
+            
+            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], '../img/' . $image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);
             header("location: ../../resources/view/userPanelP.php");
-            return $result;        
+            return $result;
         }
     }
 
@@ -24,7 +26,7 @@ class ProductController
         if (isset($_POST['ProductIdUpadate']) && !empty($_POST['ProductIdUpadate'])) {
             $image = $_FILES['ProductImgUpadate'];
             $user = new Product;
-            $result = $user->updateProductById($_POST['ProductIdUpadate'], $_POST['ProductTiUpadate'], $_POST['ProductSubUpadate'], $_POST['ProductDeUpadate'], '../img/'.$image['name'], $_POST['ProductTiDUpadate'], $_POST['ProductDeCUpadate']);
+            $result = $user->updateProductById($_POST['ProductIdUpadate'], $_POST['ProductTiUpadate'], $_POST['ProductSubUpadate'], $_POST['ProductDeUpadate'], '../img/' . $image['name'], $_POST['ProductTiDUpadate'], $_POST['ProductDeCUpadate']);
             return $result;
         }
     }

@@ -209,6 +209,8 @@ $display = new DisplayHomeController;
         </div>
     </section><br>
 
+    <a href="#" id="btnTopo" class="btn"><i style="color: white;" class="fa-solid fa-arrow-up"></i></a>
+
 </main>
 
 <?php

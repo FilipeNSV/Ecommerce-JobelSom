@@ -67,6 +67,16 @@ h2 {
     line-height: 1.4;
 }
 
+#btnTopo {
+    background-color: #dd6d28;
+    border: 1px solid silver;
+    border-radius: 40%;
+    box-shadow: 3px 3px 3px black;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+}
+
 /* Fim Sections - Home */
 
 /* Início Footer - Home */
