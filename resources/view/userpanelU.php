@@ -212,6 +212,8 @@ use App\Controller\UserController;
 
     </section>
 
-    <?php
-    require_once("include/footerPanel.php");
-    ?>
+</main>
+
+<?php
+require_once("include/footerPanel.php");
+?>

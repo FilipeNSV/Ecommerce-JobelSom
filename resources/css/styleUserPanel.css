@@ -35,6 +35,15 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
+#btnTopo {
+    border: 2px solid blanchedalmond;
+    border-radius: 40%;
+    box-shadow: 3px 3px 3px black;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
 .page-link {
     background-color: black;
     color: white;

@@ -68,12 +68,11 @@ h2 {
 }
 
 #btnTopo {
-    background-color: #dd6d28;
-    border: 1px solid silver;
+    border: 2px solid blanchedalmond;
     border-radius: 40%;
     box-shadow: 3px 3px 3px black;
     position: fixed;
-    left: 15px;
+    right: 15px;
     bottom: 15px;
 }
 
@@ -90,5 +89,16 @@ footer {
 
     #imgLogoResp {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 454px) {   
+
+    #list-tab a {
+        font-size: 10px;
+    }
+
+    #nav-tabContent .tab-pane {
+        font-size: 11px;
     }
 }

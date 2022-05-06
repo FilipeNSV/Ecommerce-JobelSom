@@ -32,6 +32,8 @@ use App\Controller\StoreController;
       <?php } ?>
     </div>
 
+    <a href="#" id="btnTopo" class="btn btn-success"><i class="fa-solid fa-arrow-up"></i></a>
+
   </div>
 
 </nav>

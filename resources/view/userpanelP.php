@@ -276,6 +276,10 @@ use App\Controller\SelectRowController;
 
     </section>
 
-    <?php
-    require_once("include/footerPanel.php");
-    ?>
+    <a href="#" id="btnTopo" class="btn btn-success"><i class="fa-solid fa-arrow-up"></i></a>
+
+</main>
+
+<?php
+require_once("include/footerPanel.php");
+?>
