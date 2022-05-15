@@ -66,6 +66,7 @@ $display = new DisplayHomeController;
                             </div>
                         </div>
                     </div>
+                    
 
                 <?php } ?>
             </div>

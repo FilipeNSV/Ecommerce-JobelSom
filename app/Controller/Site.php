@@ -28,7 +28,7 @@ class Site
 
     public function userLogin()
     {
-        require_once __DIR__ . '/../../resources/view/userLogin.php';
+        require_once __DIR__ . '/../../resources/view/userlogin.php';
     }
 
     public function userpanelH()

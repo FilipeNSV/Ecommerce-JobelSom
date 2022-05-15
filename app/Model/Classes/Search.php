@@ -11,7 +11,7 @@ class Search
 
     public function searchTitle()
     {
-        $product = explode("/", filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL));
+        $product = explode("/", filter_input(INPUT_GET, 'router'));
         
         if (!isset($product[2])) {
             header('location: ?router=Site/home/');
@@ -26,7 +26,6 @@ class Search
         $result = $sql->selectSearchTitle('products', $name);
 
         return $result;
-       
     }
 
     public function searchTitleD()
