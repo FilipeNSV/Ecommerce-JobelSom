@@ -11,7 +11,7 @@ class HomeController
         if (isset($_POST['S1IdUpadate']) && !empty($_POST['S1IdUpadate'])) {
             $image = $_FILES['HomeS1ImgUpadate'];
             $s1 = new Home;
-            $result = $s1->updateS1ById($_POST['S1IdUpadate'], $_POST['HomeS1TiUpadate'], '../img/'.$image['name']);
+            $result = $s1->updateS1ById($_POST['S1IdUpadate'], $_POST['HomeS1TiUpadate'], 'resources/img/'.$image['name']);
             return $result;
         }
     }
@@ -19,7 +19,7 @@ class HomeController
     public function S1SelectReturn()
     {
         $s1 = new Home;
-        $result = $s1->selectS1((!empty($_GET['id'])) ? $_GET['id'] : 1);
+        $result = $s1->selectS1((!empty($_POST['Se1ID'])) ? $_POST['Se1ID'] : 1);
         return $result;
     }
     
@@ -51,7 +51,7 @@ class HomeController
     public function S3SelectReturn()
     {
         $s1 = new Home;
-        $result = $s1->selectS3((!empty($_GET['id'])) ? $_GET['id'] : 1);
+        $result = $s1->selectS3((!empty($_POST['Se3ID'])) ? $_POST['Se3ID'] : 1);
         return $result;
     }
     

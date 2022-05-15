@@ -18,7 +18,7 @@ class UserController
     public function userSelectReturn()
     {
         $user = new User;
-        $result = $user->selectUsers((!empty($_GET['id'])) ? $_GET['id'] : 1);
+        $result = $user->selectUsers((!empty($_POST['UserID'])) ? $_POST['UserID'] : 1);
         return $result;
     }
 

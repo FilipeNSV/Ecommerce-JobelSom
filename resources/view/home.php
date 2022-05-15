@@ -62,7 +62,7 @@ $display = new DisplayHomeController;
                             <div class="card-body">
                                 <h5 class="card-title mt-3"><?php echo $resultS2row['titulo']; ?></h5>
                                 <p class="card-text"><?php echo $resultS2row['subtitulo']; ?></p>
-                                <a href="product.php?searchProduct=<?php echo $resultS2row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
+                                <a href="?router=Site/product/<?php echo $resultS2row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
                             </div>
                         </div>
                     </div>
@@ -81,17 +81,17 @@ $display = new DisplayHomeController;
 
             <div class="col-md-4">
                 <div class="h-100 d-flex p-4 flex-column">
-                    <img src="../img/banner1.png" class="card-img-top" alt="...">
+                    <img src="resources/img/banner1.png" class="card-img-top" alt="...">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h-100 d-flex p-4 flex-column">
-                    <img src="../img/banner2.png" class="card-img-top" alt="...">
+                    <img src="resources/img/banner2.png" class="card-img-top" alt="...">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h-100 d-flex p-4 flex-column">
-                    <img src="../img/banner3.png" class="card-img-top" alt="...">
+                    <img src="resources/img/banner3.png" class="card-img-top" alt="...">
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@ $display = new DisplayHomeController;
                             <div class="card-body">
                                 <h5 class="card-title mt-3"><?php echo $resultS4row['titulo']; ?></h5>
                                 <p class="card-text"><?php echo $resultS4row['subtitulo']; ?></p>
-                                <a href="product.php?searchProduct=<?php echo $resultS4row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
+                                <a href="?router=Site/product/<?php echo $resultS4row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@ $display = new DisplayHomeController;
                             <div class="card-body">
                                 <h5 class="card-title mt-3"><?php echo $resultS5row['titulo']; ?></h5>
                                 <p class="card-text"><?php echo $resultS5row['subtitulo']; ?></p>
-                                <a href="product.php?searchProduct=<?php echo $resultS5row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
+                                <a href="?router=Site/product/<?php echo $resultS5row['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
                             </div>
                         </div>
                     </div>

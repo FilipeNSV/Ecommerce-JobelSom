@@ -25,7 +25,7 @@ use App\Controller\StoreController;
             <div class="card-body">
               <h5 class="card-title mt-3"><?php echo $productsRows['titulo']; ?></h5>
               <p class="card-text"><?php echo $productsRows['subtitulo']; ?></p>
-              <a href="product.php?searchProduct=<?php echo $productsRows['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
+              <a href="?router=Site/product/<?php echo $productsRows['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
             </div>
           </div>
         </div>

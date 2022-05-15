@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Model\Classes;
-session_start();
 
 use \App\Model\DataBase\DataBase;
 
@@ -31,14 +30,14 @@ class Login
                     $_SESSION['senha'] = $senha;
                     $_SESSION['primeironome'] = $rowUser['primeironome'];
                     $_SESSION['segundonome'] = $rowUser['segundonome'];
-                    header("location: ../../resources/view/userpanelP.php");
+                    header("location: ?router=Site/userpanelP/");
                 }else{
                     unset($_SESSION['email']);
                     unset($_SESSION['senha']);
-                    header('location: ../../resources/view/home.php');
+                    header('location: ?router=Site/home/');
                 }
         } else {
-            header('location: ../../resources/view/userlogin.php');
+            header('location: ?router=Site/userlogin/');
             
             }
         }

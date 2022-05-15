@@ -11,11 +11,13 @@ class Search
 
     public function searchTitle()
     {
-        if (!isset($_GET['searchProduct'])) {
-            header('location: ../../../resources/view/home.php');
+        $product = explode("/", filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL));
+        
+        if (!isset($product[2])) {
+            header('location: ?router=Site/home/');
         }
         
-        $name = "%" . trim($_GET['searchProduct']) . "%";
+        $name = "%" . trim($product[2]) . "%";
 
         $data = new DataBase;
         $db = $data->connection();
@@ -25,5 +27,22 @@ class Search
 
         return $result;
        
+    }
+
+    public function searchTitleD()
+    {
+        if (!isset($_POST['searchProduct'])) {
+            header('location: ?router=Site/home/');
+        }        
+        
+        $name = "%" . trim($_POST['searchProduct']) . "%";
+
+        $data = new DataBase;
+        $db = $data->connection();
+        
+        $sql = new Sql($db);
+        $result = $sql->selectSearchTitle('products', $name);
+
+        return $result;       
     }
 }

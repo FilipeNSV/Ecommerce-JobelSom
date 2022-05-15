@@ -15,8 +15,8 @@ class ProductController
             $user = new Product;
             move_uploaded_file($image['tmp_name'], '../../resources/img/' . $image['name']);
             
-            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], '../img/' . $image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);
-            header("location: ../../resources/view/userPanelP.php");
+            $result = $user->insertProduct($_POST['ProductTiInsert'], $_POST['ProductSubInsert'], $_POST['ProductDeInsert'], 'resources/img/' . $image['name'], $_POST['ProductTiDInsert'], $_POST['ProductDeCInsert']);
+            header("location: ?router=Site/userpanelP/");
             return $result;
         }
     }

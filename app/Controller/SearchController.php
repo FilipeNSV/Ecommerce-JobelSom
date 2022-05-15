@@ -9,7 +9,14 @@ class SearchController
     public function productSearchTitle()
     {
         $search = new Search;
-        $result = $search->searchTitle();
+        $result = $search->searchTitle();        
+        return $result;
+    }
+
+    public function productSearchTitle1()
+    {
+        $search = new Search;
+        $result = $search->searchTitleD();        
         return $result;
     }
 }

@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ee55813c9f6743864bd9c7b47a51cc6e5e203df1',
+        'reference' => 'c77d5c986be04bd867a6e06f8dbf54163b26419b',
         'name' => 'nsvdev/jobelsom',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ee55813c9f6743864bd9c7b47a51cc6e5e203df1',
+            'reference' => 'c77d5c986be04bd867a6e06f8dbf54163b26419b',
             'dev_requirement' => false,
         ),
         'phpoption/phpoption' => array(

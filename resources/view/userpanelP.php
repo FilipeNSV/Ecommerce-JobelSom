@@ -22,9 +22,9 @@ use App\Controller\SelectRowController;
             Tabelas
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="userpanelP.php" id="btnTableProducts">Produtos</a></li>
-            <li><a class="dropdown-item" href="userpanelH.php" id="btnTableHome">Home</a></li>
-            <li><a class="dropdown-item" href="userpanelU.php" id="btnTableUsers">Usuários</a></li>
+            <li><a class="dropdown-item" href="?router=Site/userpanelP/" id="btnTableProducts">Produtos</a></li>
+            <li><a class="dropdown-item" href="?router=Site/userpanelH/" id="btnTableHome">Home</a></li>
+            <li><a class="dropdown-item" href="?router=Site/userpanelU/" id="btnTableUsers">Usuários</a></li>
         </ul>
     </div><br><br>
 
@@ -44,7 +44,7 @@ use App\Controller\SelectRowController;
 
             <div class="modal fade" id="insertProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <form action="../../app/Controller/ProductController.php" method="post" enctype="multipart/form-data">
+                    <form action="?router=Site/ProductController/" method="post" enctype="multipart/form-data">
                         <div class="modal-content">
                             <div class="modal-header" style="background-color: black;">
                                 <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Inserir Produto</h5>
@@ -116,8 +116,8 @@ use App\Controller\SelectRowController;
             </thead>
 
             <?php
-
-            $productRows = $ObDisplayHome->startDisplayPProducts((!empty($_GET['page'])) ? $_GET['page'] : 1);
+            $pag = explode("/", filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL));
+            $productRows = $ObDisplayHome->startDisplayPProducts((!empty($pag[2])) ? $pag[2] : 1);
             while ($productRow = $productRows->fetch(PDO::FETCH_ASSOC)) {  ?>
 
                 <tbody>
@@ -158,21 +158,21 @@ use App\Controller\SelectRowController;
 
             <?php
             $page = new PaginationController;
-            $resultPage = $page->paginationProducts((!empty($_GET['page'])) ? $_GET['page'] : 1);
+            $pag = explode("/", filter_input(INPUT_GET, 'router', FILTER_SANITIZE_URL));
+            $resultPage = $page->paginationProducts((!empty($pag[2])) ? $pag[2] : 1);
             ?>
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="userpanelP.php?page=1">Inicio</a></li>
+                    <li class="page-item"><a class="page-link" href="?router=Site/userpanelP/1">Inicio</a></li>
                     <?php for ($i = 0; $i < $resultPage; $i++) {
                         if ($i >= 1) { ?>
                             <li class="page-item">
-                                <a class="page-link" href="userpanelP.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-
+                                <a class="page-link" href="?router=Site/userpanelP/<?php echo $i; ?>"><?php echo $i; ?></a>
                             </li>
                         <?php } ?>
                     <?php } ?>
-                    <li class="page-item"><a class="page-link" href="userpanelP.php?page=<?php echo $resultPage; ?>"><?php echo $resultPage; ?></a></li>
-                    <li class="page-item"><a class="page-link" href="userpanelP.php?page=<?php echo $resultPage; ?>">Fim</a></li>
+                    <li class="page-item"><a class="page-link" href="?router=Site/userpanelP/<?php echo $resultPage; ?>"><?php echo $resultPage; ?></a></li>
+                    <li class="page-item"><a class="page-link" href="?router=Site/userpanelP/<?php echo $resultPage; ?>">Fim</a></li>
                 </ul>
             </nav>
 

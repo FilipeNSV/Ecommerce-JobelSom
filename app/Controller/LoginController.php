@@ -21,6 +21,3 @@ class LoginController
         $login->login();
     }
 }
-
-$lc = new LoginController;
-$lc->loginValidation();

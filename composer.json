@@ -2,7 +2,8 @@
     "name": "nsvdev/jobelsom",
     "autoload": {
         "psr-4": {
-            "App\\":"app/"
+            "App\\":"App/",
+            "Routes\\":"Routes/"
         }
     },
     "require": {

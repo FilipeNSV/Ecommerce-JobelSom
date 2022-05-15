@@ -19,6 +19,10 @@ class ComposerStaticInit56b378ea7e3631e26ec92ce04e2e2080
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'R' => 
+        array (
+            'Routes\\' => 7,
+        ),
         'P' => 
         array (
             'PhpOption\\' => 10,
@@ -50,6 +54,10 @@ class ComposerStaticInit56b378ea7e3631e26ec92ce04e2e2080
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Routes\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Routes',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
@@ -64,7 +72,7 @@ class ComposerStaticInit56b378ea7e3631e26ec92ce04e2e2080
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 

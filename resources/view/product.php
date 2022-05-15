@@ -70,7 +70,7 @@ $resultRow = $resultSearch->fetch(PDO::FETCH_ASSOC);
             <div class="card-body">
               <h5 class="card-title mt-3"><?php echo $resultRow['titulo']; ?></h5>
               <p class="card-text"><?php echo $resultRow['subtitulo']; ?></p>
-              <a href="product.php?searchProduct=<?php echo $resultRow['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
+              <a href="?router=Site/product/<?php echo $resultRow['titulo']; ?>" class="btn mt-auto btn-outline-success">Mais Informações</a>
             </div>
           </div>
         </div>

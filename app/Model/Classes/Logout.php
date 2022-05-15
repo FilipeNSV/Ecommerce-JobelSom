@@ -9,6 +9,6 @@ class Logout
         session_start();
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
-        header('location: ../../resources/view/userlogin.php');
+        header('location: ?router=Site/userlogin/');
     }
 }
